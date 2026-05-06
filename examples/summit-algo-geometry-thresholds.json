@@ -1,0 +1,17 @@
+{
+  "repo": "summit-algo-geometry-stack",
+  "thresholds": {
+    "signal": 4,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 4,
+    "ship": 183,
+    "watch": 96
+  },
+  "terms": [
+    "input width",
+    "search depth",
+    "boundary pressure",
+    "complexity"
+  ]
+}
