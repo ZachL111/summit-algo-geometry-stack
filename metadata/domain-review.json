@@ -1,0 +1,73 @@
+{
+  "repo": "summit-algo-geometry-stack",
+  "language": "OCaml",
+  "category": "Algorithms",
+  "goal": "Package an OCaml local lab for geometry analysis with log and snapshot fixtures, replay consistency checks, and documented operating limits.",
+  "review_model": {
+    "terms": [
+      "input width",
+      "search depth",
+      "boundary pressure",
+      "complexity"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "input width",
+      "signal": 41,
+      "slack": 32,
+      "drag": 16,
+      "confidence": 91,
+      "score": 157,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "search depth",
+      "signal": 58,
+      "slack": 38,
+      "drag": 26,
+      "confidence": 94,
+      "score": 170,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "boundary pressure",
+      "signal": 68,
+      "slack": 47,
+      "drag": 32,
+      "confidence": 69,
+      "score": 156,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "complexity",
+      "signal": 72,
+      "slack": 54,
+      "drag": 27,
+      "confidence": 51,
+      "score": 168,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "input width",
+      "signal": 90,
+      "slack": 50,
+      "drag": 25,
+      "confidence": 84,
+      "score": 239,
+      "lane": "ship"
+    }
+  ]
+}
